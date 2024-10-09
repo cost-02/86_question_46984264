@@ -98,3 +98,9 @@ jobs:
       with:
         name: codeql-sarif
         path: /home/runner/work/86_question_46984264/results/java.sarif
+
+   - name: Upload SARIF file
+      uses: actions/upload-artifact@v3
+      with:
+        name: codeql-sarif
+        path: /home/runner/work/86_question_46984264/results/csharp.sarif
